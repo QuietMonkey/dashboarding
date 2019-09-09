@@ -92,19 +92,19 @@ class App extends Component {
     },
     tableColumn: [
       {
-        title: "Name",
+        title: "Nom",
         dataName: "name"
       },
       {
-        title: "Gender",
+        title: "Genre",
         dataName: "gender"
       },
       {
-        title: "Species",
+        title: "Espece",
         dataName: "species"
       },
       {
-        title: "Planet",
+        title: "Planète",
         dataName: "originPlanet"
       },
       {
