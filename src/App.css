@@ -76,3 +76,20 @@
 .eEqJio {
   min-width: 22vw !important;
 }
+
+.css-3i2ewu{
+  background: rgba(242, 75, 81, .8);
+  width: 95vw;
+  padding: 22px;
+  margin: 5px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px inset rgba(0, 0, 0, .2);
+}
+
+.table-title-row{
+  display: none !important;
+}
+
+.table-div{
+  height: 250px;
+}

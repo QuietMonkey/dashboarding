@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 
 import { Doughnut, Line, Bar, HorizontalBar } from 'react-chartjs-2'
 import Board from "react-trello"
+import Table from "react-material-table"
 
+import Character from './DBZCharacters'
 import './App.css'
 
 class App extends Component {
@@ -87,9 +89,33 @@ class App extends Component {
           ]
         }
       ]
-    }
+    },
+    tableColumn: [
+      {
+        title: "Name",
+        dataName: "name"
+      },
+      {
+        title: "Gender",
+        dataName: "gender"
+      },
+      {
+        title: "Species",
+        dataName: "species"
+      },
+      {
+        title: "Planet",
+        dataName: "originPlanet"
+      },
+      {
+        title: "Status",
+        dataName: "status"
+      }
+    ]
   }
+
   render() {
+    console.log(Character)
 
     return (
       <div className="App">
@@ -110,8 +136,7 @@ class App extends Component {
         </div>
 
         <Board data={this.state.dataTasks} draggable />
-
-        
+        <Table data={Character} columns={this.state.tableColumn} />
       </div>
     )
   }
