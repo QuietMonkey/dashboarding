@@ -1,3 +1,5 @@
+After a lot of search, and for a lot of reason it's a better idea to do it from scratch than to use a preexistent template.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
