@@ -10,18 +10,19 @@
   display: flex;
   align-items: center;
   border-radius: 25px;
+  box-shadow: 3px 3px 5px inset rgba(0, 0, 0, .2);
 }
 
 .one {
-  background: rgb(242, 75, 81);
+  background: rgba(242, 75, 81, .8);
 }
 
 .two {
-  background: rgb(74, 88, 240)
+  background: rgba(74, 88, 240, .65)
 }
 
 .three {
-  background: rgb(240, 237, 74)
+  background: rgba(240, 237, 74, .8)
 }
 
 .ct-chart {
@@ -48,4 +49,5 @@
 
 .ct-series > path {
   stroke : white;
+  opacity: .8;
 }
