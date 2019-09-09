@@ -1,0 +1,51 @@
+.cardsChart{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30vw;
+  height: 200px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.one {
+  background: rgb(242, 75, 81);
+}
+
+.two {
+  background: rgb(74, 88, 240)
+}
+
+.three {
+  background: rgb(240, 237, 74)
+}
+
+.ct-chart {
+  width: 100%
+}
+
+.ct-label {
+  font-size: .8em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5); 
+}
+
+.ct-bar {
+  stroke: white;
+  fill: none;
+  stroke-width: 1.5vw;
+}
+
+.ct-grids {
+  stroke: white;
+  opacity: .15;
+  stroke-dasharray: 8, 4;
+}
+
+.ct-series > path {
+  stroke : white;
+}
