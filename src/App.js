@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { Doughnut, Line, Bar, HorizontalBar } from 'react-chartjs-2';
+import { Doughnut, Line, Bar, HorizontalBar } from 'react-chartjs-2'
+import Board from "react-trello"
 
 import './App.css'
 
@@ -47,7 +48,46 @@ class App extends Component {
           'Gohan',
           'Goten',
       ]
-    }    
+    },
+    
+    dataTasks: {
+      lanes: [
+        {
+          id: 'lane1',
+          title: 'To Do',
+          cards: [
+            {id: 'Card1', title: 'Rassembler les 7 boules de cristal', description: 'Pour rescussiter nos amis', label: '125 épisodes'},
+            {id: 'Card2', title: "S'entrainer encore", description: 'Pour surpasser Kakarot', label: '8 épisodes'},
+            {id: 'Card7', title: 'Trouver la boule de Cristal n°6', description: 'Pour rescussiter nos amis', label: '12 épisodes'},
+            {id: 'Card8', title: 'Trouver la boule de Cristal n°7', description: 'Pour rescussiter nos amis', label: '12 épisodes'}
+          ]
+        },
+        {
+          id: 'lane2',
+          title: 'In Progress',
+          cards: [
+            {id: 'Card3', title: 'Trouver la boule de Cristal n°1', description: 'Pour rescussiter nos amis', label: '12 épisodes'},
+            {id: 'Card4', title: 'Trouver la boule de Cristal n°2', description: 'Pour rescussiter nos amis', label: '12 épisodes'},
+            {id: 'Card5', title: 'Trouver la boule de Cristal n°3', description: 'Pour rescussiter nos amis', label: '12 épisodes'},
+            {id: 'Card6', title: 'Trouver la boule de Cristal n°5', description: 'Pour rescussiter nos amis', label: '12 épisodes'},
+          ]
+        },
+        {
+          id: 'lane3',
+          title: 'Completed',
+          cards: [
+            {id: 'Card9', title: 'Trouver la boule de Cristal n°4', description: 'Pour rescussiter nos amis', label: '12 épisodes'}
+          ]
+        },
+        {
+          id: 'lane4',
+          title: 'Repeat',
+          cards: [
+            {id: 'Card10', title: 'Rescussiter Krilin', description: "Comme d'hab", label: 'tout les 130 épisodes', draggable: false}
+          ]
+        }
+      ]
+    }
   }
   render() {
 
@@ -68,6 +108,10 @@ class App extends Component {
           </div>
 
         </div>
+
+        <Board data={this.state.dataTasks} draggable />
+
+        
       </div>
     )
   }
